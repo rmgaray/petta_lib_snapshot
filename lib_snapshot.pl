@@ -69,6 +69,6 @@ load_saved_continuation(Name, Resume) :- string_concat(Name, ".continuation", Co
                                          term_variables(Cont, Vars),
                                          nth0(Index, Vars, OutVar),
                                          %Resume continuation:
-                                         call(Resume, Cont, OutVar, X).
+                                         call(Resume, Cont, OutVar, _).
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^%
